@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: static;
+        }
+
+        div {
+            width: 25%;
+            height: 300px;
+            position: inherit;
+            border: 4px solid green;
+        }
+
+        .red {
+            height: 50px;
+            width: 100%;
+            background: red;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .purple {
+            width: 100%;
+            height: 50px;
+            background: black;
+        }
+
+        .fixed {
+            position: fixed;
+            /* top: 0px;  uste sabitler */
+            bottom: 0px;
+            /* alta sabitler */
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="purple sticky">
+        <a href="" class="white">Anasayfa</a>
+        <a href="" class="white">Hakkımızda</a>
+    </div>
+    <div class="purple fixed">
+        <a href="" class="white">Anasayfa</a>
+        <a href="" class="white">Hakkımızda</a>
+    </div>
+
+    <div class="red">Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="yellow">Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.</div>
+    <div class="yellow">Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.</div>
+    <div class="yellow">Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>

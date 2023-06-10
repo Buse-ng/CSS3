@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            border: 1px solid red;
+            height: 300px;
+        }
+
+        .uzun-metin {
+            display: table-cell;
+            vertical-align: middle; /* tablolarda ise yarar. merkeze aliyor. 
+            center gibi ama tam ortaliyor asagi-yukari ve sag-sol olarak.*/ 
+        }
+
+        .kisa-metin {
+            text-align: justify;
+            text-align: inherit;
+            text-align: end;
+            display: table-cell;
+            vertical-align: top; /* W3School da var hepsi */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="uzun-metin">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+
+    <p class="kisa-metin">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>

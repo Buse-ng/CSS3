@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[title^="bu"]{
+            color: red;
+        }
+        p[title$="paragraf"]{
+            color: aqua;
+        }
+        p[title~="paragraf"]{
+            color: green;
+        }
+        a[href="https://www.google.com"]:visited{
+            color:red;
+        }
+        a[target="_blank"]{
+            color:yellow;
+        }
+        a[href="https:wwww.google.com"][target="_blank"]{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <p title="bu bir paragraftir">Paragraf1</p>
+    <p title="bu bir paragraf degildir">Paragraf2</p>
+    <p title="bir paragraf">Paragraf3</p>
+
+    <a href="https://www.google.com">GOOGLE</a>
+    <br><br>
+    <a href="https://wwww.google.com" target="_blank">GOOGLE</a>
+</body>
+</html>

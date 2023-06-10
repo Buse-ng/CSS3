@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p{
+
+            color: red;
+        }
+
+        div .paragraf1 {
+            color: aqua;
+            background: orange;
+        }
+
+        div p {
+            color: pink;
+            background: none !important;
+        }
+        p, h2, div{
+            color: red;
+        }
+        h2{
+            color: green;
+        }
+    </style>
+    <!--        
+        *{
+
+            color: red;
+            background: blueviolet;
+        }
+        bu sekilde *{} yazinca tum hepsini secmek icin kullanilabilir.
+    -->
+</head>
+
+<body>
+
+    <div class="container">
+        Burası Divin içi
+        <p class="paragraf1">
+            Paragraf1
+        </p>
+        <p class="paragraf2">
+            Paragraf2
+        </p>
+        <p class="paragraf3">
+            Paragraf3
+        </p>
+    </div>
+
+    <p>Divsiz paragraf</p>
+
+    <div>
+        <p>Sınıfsız divli paragraf</p>
+    </div>
+
+    <div class="container">
+        <h2>DIV2</h2>
+    </div>
+
+</body>
+
+</html>

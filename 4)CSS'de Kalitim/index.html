@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue !important;  
+        }
+        .futbol{
+            color: red;
+        }
+        .basket{
+            color: turquoise;
+        }
+        .voleybol{
+            color: purple;
+        }
+        #takim{
+            color: yellow;
+        }
+    </style>
+
+    <!--
+        id ler seçicilik bakımından daha öncelikli gelir.
+        normalde futbola red vermiştik ama id ye yellow verdiğimizde 
+        öncelikli olan id oldugu icin sarı renk olur.
+
+        öncelik sırası
+        -!important
+        -id
+        -class
+        -etiket
+        
+        !important koydugumuzda en önemli bunu görür ve hepsini bu renk yapar. en üstteki paragrafta
+    -->
+
+</head>
+<body>
+    
+    <div>
+        <h1>TAKIMLAR</h1>
+        <p id="takim" class="futbol">Futbol Takımı 1</p>
+        <p class="futbol">Futbol Takımı 2</p>
+        <p class="basket">Basketbol Takımı 1</p>
+        <p class="basket">Basketbol Takımı 2</p>
+        <p class="voleybol">Voleybol Takımı 1</p>
+        <p class="voleybol">Voleybol Takımı 2</p>
+    </div>
+</body>
+</html>

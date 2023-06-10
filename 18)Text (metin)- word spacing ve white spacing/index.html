@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            word-spacing: inherit;
+            word-spacing: 10px;
+            /* kelimeler arasinda ne kadar bosluk olmasini istiysak */
+            white-space: nowrap;
+            /* mesela kelimenin arasina 4 5 boşluk koyduk veya alt satira gectik ama br birakmadik.
+             bunda o bosluk birakmalarimiz saymayip metni bosluksuz gibi normal sekilde yaziyor */
+            white-space: pre;
+            /* pre yi kullaninca yazdigimiz gibi bosluklari da alarak yaziyor. */
+            /* pre hazir hale getirmek gibi.
+            pre ve pre-wrap ayni sekilde davraniyor.
+            varsayilan ozelliker: nowrap tir. bosluksuz alir bu da. */
+            white-space:pre-line; /* satir satir aliyo ve aradaki bosluklari kesiyor.*/
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum, dolor        sit amet
+        consectetur adipisicing elit. Facilis, exercitationem.</p>
+
+<pre>
+        kaan academy
+                html css kursu
+</pre>
+
+</body>
+</html>
